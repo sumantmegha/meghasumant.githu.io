@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> माझा सातारा </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="satara.css">
+  <style>
+    #shape{
+      background-color: aqua;
+      padding-left: 35px;
+      padding-right: 35px;
+      clip-path: polygon(0% 0%, 100% 0%, 80% 50% , 100% 100%, 0% 100% , 20% 50% , 0% 0%);
+    }
+    .sataraimg{
+      background-size: cover;
+      height: 50vh;
+      opacity: 0.5;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--   Navigation bar  -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid bg-primary">
+      <a class="navbar-brand" href="index.html" >माझा सातारा</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#places">Places</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#photos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Photos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#sataraphotos">Satara</a></li>
+              <li><a class="dropdown-item" href="#kasphotos">Kas</a></li>
+              <li><a class="dropdown-item" href="#sajjangadphotos">Sajjangad</a></li>
+              <li><a class="dropdown-item" href="#thosegharphotos">Thoseghar</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">More Places</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" action="https://www.google.com/search" target="_blank" method="get" role="search">
+          <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success gcse-search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--   End of Navigation Bar -->
+  <!-- Carousel Start -->
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active data-bs-interval=" 500000"">
+          <img src="satara.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item data-bs-interval=" 500000"">
+          <img src="sataraimg.jfif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item data-bs-interval=" 500000"">
+          <img src="satararajwada.jfif" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+  <!--Heading places-->
+  <div class="container p-3" id="places">
+    <h1 class="text-center"> Places in <span id="shape">Satara</span> </h1>
+  </div>
+  <!--End heading places-->
+
+  <!-- Places Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col order-3">
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
+            <img src="Thoseghar.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body align-items-stretch">
+            <h5 class="card-title">Thoseghar Falls</h5>
+            <p class="card-text">The stunning Thoseghar Falls are located near the village of Thoseghar at a distance of
+              20 km from the city of Satara in Maharashtra. The Thoseghar Falls are a series of waterfalls with some falls
+              as high as 15-20m, whereas, the highest fall plummeting from a height of 200m.
+            </p>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#thosegharmore">
+                Read More
+              </button>
+            </p>
+            <div class="collapse" id="thosegharmore">
+                The tranquil scenic surrounding landscapes coupled with the thunderous sound of the gushing water are the
+                main attractions of the Thoseghar Falls. The viewing platform allows getting a sufficiently full view of
+                the gorgeous waterfalls. Thoseghar is best visited during the monsoon and is an easy weekend getaway from
+                Pune and Mumbai. Besides, being a great hangout for nature admirers the falls and surrounding landscapes
+                are also known for sheltering various bird species.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col order-2">
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
+            <img src="pratapgad.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body align-items-stretch">
+            <h5 class="card-title">Pratapgad</h5>
+            <p class="card-text">Pratapgad is a hill fort in Maharashtra. Situated close to the famous hill station of
+              Mahabaleshwar in the district of Satara, the citadel rises to an elevation of about 3500 feet from the
+              ground.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#pratapgadmore">Read More</a>
+            <div class="collapse" id="pratapgadmore">
+              Much of the fortifications are still intact, and the fort is a popular tourist destination. There are four
+              lakes within the fort, many of which overflow during the monsoons. There is a watchtower just beside the
+              Mahadarwaza, or the main entrance, at the end of the motorable road. There is a statue of Shivaji Maharaj in his full glory, which was installed about 60 years ago. There is a Bhawani temple at the top of the fort, and a cultural library showcasing the heritage of the fort. There is a handicrafts centre en route to
+              Pratapgad from the base village, which draws a lot of tourists.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col order-1">
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
+            <img src="ajinkyatara.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body align-items-stretch">
+            <h5 class="card-title">AninkyaTara</h5>
+            <p class="card-text">Raja Bhoj constructed Ajinkyatara Fort on one of the Sahyadri mountains which consist of seven mountain ranges, that was built in the 16th century. The elevation of this fort is 3,300 feet. It was initially named after the son of Aurangzeb, Ajim. 
+  
+             </p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#ajinkyataramore">Read More</a>
+            <div class="collapse" id="ajinkyataramore">
+              The name of this fort was changed from ‘Ajimtara’ to ‘Ajinkyatara’ by Narayan Hari Apte, a Marathi Novelist. It is the most historic places in Maharashtra and one of the best tourist spot in the district of Satara.The Ajinkyatara fort gives an astonishing panoramic view of the whole of Satara City. The Fort is protected by 4-metre high fortification. There are two gates: the main gate placed at the north-west and a small gate at the south-east. There are various temples devoted to Indian deities such as Lord Shankar, Lord Hanuman and Devi Mangalai. Visitors be a guest of this fort for mountaineering, trekking and hiking.
+              The best time to visit Ajinkyatara fort is from November to February. It is situated at a distance of 5 kms from Satara, 58 kms from Mahabaleshwar. The top of the fort is directly accessible by any private vehicle too. The nearest junction is the Satara Junction.
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Places End -->
+  <br>
+  <!--Photos of Satara -->
+  <div class="container" id="sataraphotos">
+    <p class="text-center display-1">Satara Photos </p>
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5">
+        <div style="background-image:url('satara2.jfif');background-repeat: no-repeat;">
+      </div>
+        <img class="img-fluid" src="satara2.jfif" alt="">
+        <p class="text-center h3 ">Satara</p>
+      </div>
+      <div class="shape"></div>
+      <div class="col-sm-5 text-center border border-danger rounded-5 sataraimg " style="background-image: url('satara3.jfif');">
+        
+        <p class="text-center h3"> सातारा  </p>
+      </div>
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5">
+        <img class="img-fluid" src="natrajmandir.jpg" alt="">
+        <p class="text-center h3 "> नटराज मंदीर </p>
+      </div>
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5">
+        <img class="img-fluid" src="satarasainikschool.jfif" alt="">
+        <p class="text-center h3 "> सैनिक स्कूल सातारा  </p>
+      </div>
+    </div>
+  </div>
+  <!--End of Satara Photo-->
+
+  <!--Photos of Kas -->
+  <div class="container mt-5" id="kasphotos">
+    <p class="text-center display-1">Kas Photos </p>
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5"><img class="img-fluid" src="kasimage1.jpg" alt=""></div>
+      <div class="col-sm-5 m-2 p-2 text-center bg-info border border-danger rounded-5"><img class="img-fluid" src="satara3.jfif" alt=""></div>
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5"><img class="img-fluid" src="sataraimg.jfif" alt=""></div>
+      <div class="col-sm-5 m-2 p-2 text-center border border-danger rounded-5"><img class="img-fluid" src="satarasainikschool.jfif" alt=""></div>
+    </div>
+  </div>
+  <!-- End of Kas photo -->
+
+  <!-- Satara Kandi Pedha -->
+    <div class="container mt-5" id="satarakandipedha">
+      <p class="text-center display-1">सातारी कंदी पेढा  </p>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col m-5">
+        <p>
+          अख्ख्या भारतात कोणी सातारला जाणार असेल तर त्याला येताना कंदी पेढे घेऊन ये असे सांगितले जात. तो आता एक खाद्यपदार्थ उरला नाही तर तो एक ब्रँड बनलाय.
+        </p>
+        <p>
+          कंद म्हणजे भाजण्याची पद्धत. खव्याची पक्की पक्की भाजणी म्हणजेच कंदी पेढा. सुरवातीला ही खवा भाजणी पद्धत छत्रपतींच्या वंशंजाना आवडली म्हणून त्यांनी सातारी पेढ्यांना कंदी पेढे असं नाव दिलं. 
+          ब्रिटीशांनी कंदी पेढे हे नाव दिलं हे साफ खोटं असून हे नाव छत्रपतीं घराण्याच्या वंशजांनी दिलेलं आहे. 
+        </p>
+        <p>
+          मोदी हा छत्रपतींनी दिलेला किताब आहे. ज्याप्रमाणे पाटीलकी दिली जात तशाच प्रमाणे हा किताब छत्रपतींकडून देण्यात आला आहे. छत्रपतींच्या नवव्या वंशजानी महाराष्ट्र कर्नाटक सीमेवरील खडकलाट या गावातून काही मिठाई बनवणाऱ्या कुटुंबाना साताऱ्यात आणून वसवलं होतं. त्यांनी बनवलेले कंदी पेढे लोकप्रिय होत गेले. पुढे त्यांनाच लाटकर अस ओळखल जाऊ लागल.
+        </p>
+        <p>
+          जेव्हा पहिल्यांदा साताऱ्यात पेढा तयार होवू लागला, तेव्हा साताऱ्याजवळील कास येते म्हशीच्या दुधाची प्रत चांगली असल्याने शेतकऱ्यांना खवा बनवण्याचे प्रशिक्षण दिले गेले. कास चा परिसर वनसमृद्धिने भरलेला असल्याने  कंदमुळे इत्यादीचे प्रमाण जास्त होते. कास येथून आलेल्या खव्याला कंदयुक्त खवा असे ओळखू जावू लागले. त्यालाच कंदी पेढा असे नाव छत्रपती घराण्याचे नववे वंशज यांनी दिले.
+
+          कंदी पेढ्याला सातासमुद्रापार नेलं ते तुळजाराम मोदी या हलवायांनी.
+          त्यांनी सत्तरवर्षापूर्वी विमानात, लंडनमधील सुप्रसिद्ध ठिकाणी या कंदी पेढ्यांच्या जाहिराती लावल्या. त्यामुळेच हा पेढा कानाकोपऱ्यात पोहचला.
+        </p>
+        <p>
+          आजही एवढ्या वर्षांनी एवढी तंत्रज्ञानात सुधारणा होऊनदेखील मोदी आणि लाटकर हलवाई  मात्र  कंदी पेढ्याचा खवा आजही कढईतच भाजतात व प्रत्येक पेढा हातावरच वळला जातो. खव्याची भाजणी विशिष्ट प्रकारे केल्यामुळे पेढ्याची पौष्टिकता, चव व टिकाऊपणा वाढतो. म्हणूनच गेली १०० वर्ष सातारच्या कंदी पेढ्यांची चव आणि गुणवत्ता तशीच टिकून आहे.
+        </p>
+      </div>
+      <div class="col embed-responsive ">
+        <iframe class="embed-responsive-item vw-100 vh-100" src="https://www.youtube.com/embed/Pi3j785S3TU" title="बघा कसे बनतात साताऱ्याचे कंदी पेढे |Famous satara kandi pedha making | J.P Kandi Pedewale|food vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen"></iframe>
+      </div>
+      <!-- End of Kandi Pedha -->
+
+      <!-- Contact Us -->
+      <div class="container mt-5">
+        <div class="row">
+          <p class="h1 text-center">Do you need any other information about Satara? </p>
+          <p class="h2 text-center">Please fill the following form. We will difinitely connect with you.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mx-auto w-25">
+            <img class="" src="feedback.png" alt="">
+        </div>
+        <p class="h1 text-center bg-info mt-5 mb-5">FeedBack Form</p>
+        <form action="">
+            <div class="row m-3 border justify-content-center">
+                <div class="col-3"> <label for="txtname">Name of Customer </label></div>
+                <div class="col-7"> <input type="text" id="txtname" class="w-75"></div>
+            </div>
+            <div class="row m-3 border justify-content-center">
+                <div class="col-3"><label for="txtaddress">Address </label></div>
+                <div class="col-7"><input type="text" id="txtaddress" class="w-75"></div>  
+            </div>
+            <div class="row m-3 border justify-content-center">
+                <div class="col-3"><label for="txtcity">City </label></div>
+                <div class="col-7"><input type="text" id="txtcity" class="w-75"></div>
+            </div>
+            <div class="row m-3 border justify-content-center">
+                <div class="col-3"><label for="txtphone">Phone </label></div>
+                <div class="col-7"><input type="text" id="txtphone" class="w-75"></div>  
+            </div>
+            <div class="row m-3 border justify-content-center">
+                <div class="col-3"><label for="txtemail">Email </label></div>
+                <div class="col-7"><input type="email" id="txtemail" class="w-75"></div>
+            </div>
+            <div class="row m-3 border justify-content-center">
+              <div class="col-3"><label for="txtsuggestions">Suggestions </label></div>
+              <div class="col-7"><textarea class="form-control w-75" id="txtsuggetions"></textarea>
+          </div>
+            <div class="row justify-content-center m-3 border">
+                <button class="btn btn-primary w-25">Submit</button>
+            </div>
+        </form>
+
+    </div>
+      <!-- End of contact us -->
+
+  <!--Footer Start-->
+  
+  <!--Footer End -->
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
